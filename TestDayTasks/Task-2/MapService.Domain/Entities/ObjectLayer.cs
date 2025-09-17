@@ -3,6 +3,6 @@ using MapService.Domain.Enums;
 
 namespace MapService.Domain.Entities;
 
-public class ObjectLayer : LayerEntity<MapObject, MapObjectTypes>
+public class ObjectLayer : LayerEntity<MapObject>
 {
 }

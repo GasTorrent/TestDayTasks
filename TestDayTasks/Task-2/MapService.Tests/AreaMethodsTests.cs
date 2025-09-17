@@ -126,7 +126,7 @@ public class AreaMethodsTests
         Assert.True(obj.Covers(coord));
     }
     
-    private class TestObject : ObjectEntity<string>
+    private class TestObject : ObjectEntity
     {
     }
 }
