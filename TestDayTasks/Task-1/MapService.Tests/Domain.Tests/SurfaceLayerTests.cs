@@ -57,8 +57,8 @@ public class SurfaceLayerTests
         var area = new Area(new Coordinate(0, 0), new Coordinate(1, 1));
         layer.FillArea(area, SurfaceType.Mountain);
 
-        for (int y = 0; y <= 1; y++)
-        for (int x = 0; x <= 1; x++)
+        for (var y = 0; y <= 1; y++)
+        for (var x = 0; x <= 1; x++)
             Assert.Equal(SurfaceType.Mountain, layer.GetTileType(new Coordinate(x, y)));
 
         Assert.Equal(SurfaceType.Plain, layer.GetTileType(new Coordinate(2, 2)));
